@@ -1,5 +1,5 @@
 <?php
-class dados{
+class Dados{
 // dbection
 private $db;
 // Table

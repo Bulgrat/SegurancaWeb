@@ -1,12 +1,12 @@
 <?php
 class Database {
 public $db;
-public function getConnection(){
+public function conectaBanco(){
 $this->db = null;
 try{
 $this->db = new mysqli('localhost','root','','apicrud');
 }catch(Exception $e){
-echo "Database could not be connected: " . $e->getMessage();
+echo "Não conseguiu conectar ao banco: " . $e->getMessage();
 }
 return $this->db;
 }
